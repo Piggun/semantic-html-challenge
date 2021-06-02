@@ -1,33 +1,38 @@
-/* CSS files add styling rules to your content */
-
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-  /* border: 2px solid blue; */
-}
-
-h1 {
-  font-style: italic;
-  color: #373fff;
+  margin: 1em;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
 }
 
 table {
   table-layout: auto;
   width: 100%;
   background-image: url(assets/leopardskin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 2px solid #800080;
+  border-collapse: collapse;
 }
 
-tbody {
+tbody tr{
   background-image: url(assets/noise.png);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
-th {
-  border: 3px #800080;
+thead th {
+  font-size: small;
+  height: 50px;
+  border: 2px solid #800080;
+  border-collapse: collapse;
   color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
 }
 
-tbody tr:nth-child(odd){
+td:first-child {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
   background-color: #ff33cc;
 }
 
@@ -35,6 +40,43 @@ tbody tr:nth-child(even){
   background-color: #e495e4;
 }
 
-tfoot{
+tfoot td {
+  font-size: small;
   color: white;
+  border: 2px solid #800080;
+  padding: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+}
+
+tfoot td:first-child {
+  text-align: right;
+}
+
+tfoot td:nth-child(2) {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+tr {
+  height: 40px;
+}
+
+th:first-of-type{
+  width: 30%;
+}
+
+th:last-of-type{
+  width: 30%;
+}
+
+th{
+  width: 20%;
+}
+
+caption{
+  caption-side: bottom;
+  text-align: right;
+  padding: 10px;
+  color: rgba(0,0,0,0.6);
+  font-size: 0.9em;
 }

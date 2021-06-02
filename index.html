@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>Famous bands table</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
     <!-- imported bootstrap for other task, not related to the "semantic-html-challenge" -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -18,6 +20,8 @@
     <!--repalce this h1 and p content with your own html table -->
     <container>
       <table>
+        <caption>A summary of the UK's most famous punk bands</caption>
+
         <thead>
           <tr>
             <th>Band</th>
@@ -26,12 +30,13 @@
             <th>Most famous song</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td>Buzzcocks</td>
             <td>1976</td>
             <td>9</td>
-            <td>Ever fallen in love</td>
+            <td>Ever fallen in love (with someone you shouldn't've)</td>
           </tr>
           <tr>
             <td>The Clash</td>
@@ -75,19 +80,19 @@
             <td>17</td>
             <td>No More Heroes</td>
           </tr>
-
     
         <tfoot>
           <tr>
-            <td>Total Albums</td>
-            <td>77</td>
+            <td colspan="2">Total Albums</td>
+            <td colspan="2">77</td>
           </tr>
         </tfoot>
-      
+
         </tbody>
+
       </table>
     </container>
-
+    
     <br><br>
     <p>
       I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
