@@ -3,9 +3,38 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  /* border: 2px solid blue; */
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+}
+
+table {
+  table-layout: auto;
+  width: 100%;
+  background-image: url(assets/leopardskin.jpg);
+  border: 2px solid #800080;
+}
+
+tbody {
+  background-image: url(assets/noise.png);
+}
+
+th {
+  border: 3px #800080;
+  color: white;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even){
+  background-color: #e495e4;
+}
+
+tfoot{
+  color: white;
 }
